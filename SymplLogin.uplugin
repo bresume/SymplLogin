@@ -1,0 +1,51 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "SymplLogin",
+	"Description": "A plugin for managing login and authentication.",
+	"Category": "SymplGames",
+	"CreatedBy": "Behron Georgantas",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "SymplLogin",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"AdditionalDependencies": [
+				"PlayFab",
+				"PlayFabCpp",
+				"PlayFabCommon",
+				"Steamworks",
+				"OnlineSubsystem",
+				"OnlineSubsystemUtils",
+				"OnlineSubsystemSteam"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "OnlineSubsystemSteam",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystem",
+			"Enabled": true
+		},
+		{
+			"Name": "OnlineSubsystemUtils",
+			"Enabled": true
+		},
+		{
+			"Name": "PlayFab",
+			"Enabled": true
+		}
+	]
+}
